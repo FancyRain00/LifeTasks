@@ -1,13 +1,15 @@
 import sqlite3
 import datetime
+import PyPDF2
 
 class Task:
-    def __init__(self, name, description, importance, deadline, category):
+    def __init__(self, name, description, importance, category, deadline, frequency):
         self.name = name
         self.description = description
         self.importance = importance
-        self.deadline = deadline
         self.category = category
+        self.deadline = deadline
+        self.frequency = frequency
         self.done = False
 
     def mark_task_done(self):
@@ -19,5 +21,6 @@ class Task:
     def change_importance(self, importance):
         self.importance = importance
 
+
 if __name__ == "__main__":
-    print("Hello World!")
+    print("Hello World")
