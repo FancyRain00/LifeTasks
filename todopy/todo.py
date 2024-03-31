@@ -21,6 +21,5 @@ class Task:
     def change_importance(self, importance):
         self.importance = importance
 
-
 if __name__ == "__main__":
-    print("Hello World")
+    print("Hello world")

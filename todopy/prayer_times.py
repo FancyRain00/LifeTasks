@@ -52,8 +52,11 @@ def turku():
 
 
 def Tampere():
+    month_nmr = 4
+    month_str = "Huhtikuu"
+
     # URL of the PDF file
-    pdf_url = "http://islamtampere.com/wp-content/uploads/2024/01/3.-Maaliskuu2024.pdf"
+    pdf_url = f"http://islamtampere.com/wp-content/uploads/2024/01/{month_nmr}.-{month_str}-2024.pdf"
 
     # Fetch PDF content directly
     response = requests.get(pdf_url)
